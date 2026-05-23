@@ -1,0 +1,20 @@
+{
+  "name": "research-companion-marketplace",
+  "interface": {
+    "displayName": "Research Companion Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "research-companion",
+      "source": {
+        "source": "local",
+        "path": "./plugins/research-companion"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
