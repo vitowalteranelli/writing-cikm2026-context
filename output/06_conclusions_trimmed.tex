@@ -1,0 +1,10 @@
+% ================================================================================
+\section{Conclusions}
+\label{sec:conclusions}
+\looseness=-1
+
+This work introduced \modelname{}, a context-aware graph recommender with context-gated message passing, and nine context-sensitive evaluation metrics, from exact match (ACC) through partial alignment (CS, WCS, WCA, Friction) to list-level coverage (CR, CGB) and context-weighted ranking (CW-nDCG, CW-MAP).
+
+The experiments support two main conclusions. First, context-gated message passing improves standard ranking accuracy on informative datasets (Yelp, Frappe), accompanied by better contextual alignment. On BGG, despite reduced embedding size, the architecture achieves superior geometric and contextual ranking quality, showing that context-aware benefits extend beyond accuracy. Second, using CW-nDCG@10 as a validation objective does not improve recommendation quality over nDCG@10 and may penalize atypical interactions. This separates context-aware evaluation from context-aware optimization.
+
+The ablation study confirms that the optimal context feature subset is dataset-dependent and that standard accuracy measures alone miss contextual degradation. Future work includes extending to continuous context, improving memory efficiency via sparse context-gating, and refining context-sensitive validation objectives.
